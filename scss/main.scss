@@ -1,13 +1,15 @@
 
 
-// normalize
-@import "./misc/normalize";
 
 // header
 @import "./layout/header";
 
 // footer
 @import "./layout/footer";
+
+
+// normalize
+@import "./misc/normalize";
 
 // services
 @import "./components/service";
@@ -19,8 +21,6 @@
 @import "./components/email";
 
 // mediaquarry
-// @import "./components/media-query";
-@import "./misc/tablet";
-@import "./misc/mobile;"
+@import "./components/media-query";
 
 
