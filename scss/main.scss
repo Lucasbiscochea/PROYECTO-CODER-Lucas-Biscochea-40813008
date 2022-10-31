@@ -1,0 +1,26 @@
+
+
+// normalize
+@import "./misc/normalize";
+
+// header
+@import "./layout/header";
+
+// footer
+@import "./layout/footer";
+
+// services
+@import "./components/service";
+
+// project
+@import"./components/project";
+
+// email(check)
+@import "./components/email";
+
+// mediaquarry
+// @import "./components/media-query";
+@import "./misc/tablet";
+@import "./misc/mobile;"
+
+

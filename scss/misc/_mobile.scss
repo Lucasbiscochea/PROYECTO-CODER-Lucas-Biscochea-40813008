@@ -1,0 +1,137 @@
+@media screen and (max-width:700px){
+    .logo__umbrella{
+        height: 100px;
+        width: 100px;
+        padding: 15px 0;
+        text-align: center;
+    }
+    main .container,
+    footer .container{
+        padding: 60px 0;
+    }
+    .nav__container{
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    .nav__umbrella{
+        height: auto;
+    }
+    .links{
+        padding-bottom: 10px;
+        text-align: center;
+    }
+    .link{
+        padding: 7px 10px;
+    }
+    .umbrella__main{
+        flex-direction: column-reverse;
+        justify-content: flex-end;
+        height: auto;
+        padding: 30px 0;
+    }
+    .umbrella__texto{
+        width: 100%;
+        text-align: center;
+    }
+    .fondo{
+        width: 60%;
+        margin-bottom: 20px;
+    }
+    .title{
+        font-size: 30px;
+    }
+    .copy{
+        font-size: 20;
+    }
+    .subtitle{
+        font-size: 35px;
+        text-align: center;
+    }
+    .copy__section{
+        font-size: 20px;
+        text-align: center;
+    }
+    .services .card{
+        width: 80%;
+    }
+    .container-bg{
+        justify-content: space-evenly;
+    }
+    .card{
+        margin-bottom: 40px;
+        width: 60%;
+    }
+    .card__title{
+        font-size: 35px;
+    }
+    .card__button{
+        width: 100%;
+    }
+    .background{
+        width: 70%;
+        margin-bottom: 40px;
+    }
+    .background__copy{
+        display: inline;
+        font-size: 18px;
+    }
+    .container--modifier{
+        width: 100%;       
+    }
+    .socialmedia{
+        align-items: center;
+    }
+    .check__item{
+        justify-content: space-evenly;
+    }
+    .socialmedia__legend{
+        font-size: 20px;
+    }
+}
+@media screen and (max-width:500px){
+    .logo__umbrella{
+        width: 100px;
+        height: 100px;
+    }
+    .fondo{
+        width: 80%;
+        margin-bottom: 15px;
+    }
+    .services .card{
+        width: 95%;
+    }
+    .card{
+        width: 95%;
+    }
+
+    .background{
+        width: 95%;
+    }
+    .container--modifier{
+        width: 90%;
+    }
+    .newsletter{
+        width: 230px;
+        display: none;
+    }
+    .newsletter--modifier{
+        display: block;
+
+    }
+    .check__item{
+        border: none;
+        width: 100%;
+        display: table-cell;
+        vertical-align: middle;
+        text-align: center;
+    }
+    .dowloand__item{
+        width: 50%;
+    }
+    .dowloand__title{
+        font-size: 16px;
+    }
+    .dowloand__logo{
+        font-size: 30px;
+    }
+}

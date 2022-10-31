@@ -1,4 +1,4 @@
-*{
+ *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -16,6 +16,7 @@
 }
 .umbrella{
     width: 100%;
+    min-height: 100vh;
     background: #080809;
     
 }
@@ -34,7 +35,7 @@
 .logo__umbrella{
     height: 50px;
 }
-.links ul li{
+.links ul{
     list-style: none;
 }
 .link{
@@ -42,10 +43,8 @@
     display: inline-block;
     color: inherit;
     text-decoration: none;
-    text-align: center;
-    font-weight: 300px;
+    font-weight: 300;
     padding: 10px;
-    position: relative;
 }
 .link--active{
     color: #800000;
@@ -63,13 +62,6 @@
     height: calc(100vh - 70px);
 }
 .fondo--modifier{
-    width: 70%;
-    
-}
-.fondo--modifierindex{
-    width: 70%;
-}
-.fondo--modifierproductos{
     margin-left: 200px;
     
 }
@@ -101,8 +93,7 @@
     font-weight: 700;
     box-shadow: #00000033 ;
     border-radius: 6px;
-    transition: .4s ease;
-}
+} 
 /* servicies */
 .services{
     background-color: #fafafa;
@@ -124,7 +115,12 @@
     text-align: center;
     margin-bottom: 32px;
 }
-
+.container-cards{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
 .card{
     width: 30%;
     padding: 30px 0;
@@ -174,8 +170,9 @@
     text-align: center;
     padding: 12px 0;
     text-decoration: none;
-}
-.card__date{
+} 
+/* project */
+ .card__date{
     color: #800000;
     font-size: 18px;
     font-weight: bold;
@@ -209,7 +206,7 @@
     color: blanchedalmond;
 }
 /* check */
-.check{
+ .check{
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
@@ -273,7 +270,8 @@
     font-family: inherit;
     font-weight: 700;
     cursor: pointer;
-}
+} 
+/* footer */
 .footer{
     background: #fafafa;
 }
@@ -346,9 +344,9 @@
 .socialmedia__legend{
     color: #080809;
     margin-right: 16px;
-}
+} 
 /* Efectos/animaciones/transiciones */
-.link::after{
+ .link::after{
     content: "";
     position: absolute;
     background-color: #800000;
@@ -364,41 +362,8 @@
 }
 .link:hover::after{
     width: 100%;
-}
-/* EDITANDO  Grid System de Boostraps */
-.container__cience{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-}
-.card__cience{
-    padding: 30px 0;
-    overflow: hidden;
-    background: linear-gradient(180deg, #080809 0%, black 100%);
-    border-radius: 10px;
-    position: relative;
-    text-align: center;
-    box-shadow: 0 0 6px #080809;
-}
-.card__photo{
-    text-align: center;
-    width: 99%;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 10px 10px 10px 10px;
-}
-.btn{
-    align-content: center;
-    background: linear-gradient(180deg, #f7ce90 0%,#f48d76 100%);
-    border-radius: 6px;
-    width: 20%;
-    color: #080809;
-    font-weight: 700;
-    text-align: center;
-    padding: 12px 0;
-    text-decoration: none;
-}
+} 
+
 /* RESPONSIVE(INTENTO) */
 @media screen and (max-width: 1000px){
     .fondo{
@@ -412,7 +377,7 @@
         width: 450px;
         height: auto;
     }
-    /* .fondo--modifier{
+    .fondo--modifier{
         height: 70%;
         padding-right: 400px;
     } */
@@ -457,7 +422,7 @@
     .socialmedia__legend{
         font-size: 18px;
     }
-}
+
 @media screen and (max-width:700px){
     .logo__umbrella{
         height: 100px;
@@ -597,4 +562,4 @@
         font-size: 30px;
     }
 }
-
+}
