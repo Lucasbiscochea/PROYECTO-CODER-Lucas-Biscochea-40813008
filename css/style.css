@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-.container{
+/* .container{
     width: 90%;
     max-width: 1200px;
     margin: 0 auto;
@@ -64,9 +64,9 @@
 .fondo--modifier{
     margin-left: 200px;
     
-}
+} */
 
-.title{
+/* .title{
     font-size: 56px;
     font-weight: 300;
     color: #fff;
@@ -95,7 +95,7 @@
     border-radius: 6px;
 } 
 /* servicies */
-.services{
+/* .services{
     background-color: #fafafa;
 }
 .subtitle{
@@ -170,7 +170,7 @@
     text-align: center;
     padding: 12px 0;
     text-decoration: none;
-} 
+}  */
 /* project */
  .card__date{
     color: #800000;

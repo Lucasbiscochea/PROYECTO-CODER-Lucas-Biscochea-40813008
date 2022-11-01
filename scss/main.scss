@@ -1,26 +1,11 @@
-
-
-
-// header
 @import "./layout/header";
-
-// footer
-@import "./layout/footer";
-
-
-// normalize
-@import "./misc/normalize";
-
-// services
+@import "./layout/animaciones";
 @import "./components/service";
-
-// project
-@import"./components/project";
-
-// email(check)
+@import "./components/project";
 @import "./components/email";
-
-// mediaquarry
+@import "./layout/footer";
+@import "./layout/animaciones";
 @import "./components/media-query";
+
 
 
