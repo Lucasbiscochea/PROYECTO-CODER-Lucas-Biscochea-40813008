@@ -1,10 +1,4 @@
 @media screen and (max-width: 1200px){
-    .logo__umbrella{
-        height: 80px;
-        width: 80px;
-        padding: 15px 0;
-        text-align: center;
-    }
     .nav__container{
         flex-wrap: wrap;
         justify-content: space-evenly;
@@ -12,6 +6,10 @@
     .fondo{
         width: 500px;
         height: auto;
+    }
+    .fondo__producto{
+        width: 30%;
+        object-position: cover;
     }
     .nav__umbrella{
         height: auto;
@@ -22,12 +20,6 @@
     }
 }
 @media screen and (max-width: 975px){
-    .logo__umbrella{
-        height: 80px;
-        width: 80px;
-        padding: 15px 0;
-        text-align: center;
-    }
     .nav__container{
         flex-wrap: wrap;
         justify-content: space-evenly;
@@ -35,6 +27,14 @@
     .fondo{
         width: 500px;
         height: auto;
+    }
+    .fondo--modifierindex{
+        width: 50%;
+        height: auto;
+    }
+    .fondo__producto{
+        width: 30%;
+        object-position: cover;
     }
     .nav__umbrella{
         height: auto;
@@ -46,12 +46,6 @@
 }
 
 @media screen and (max-width:900px){
-    .logo__umbrella{
-        height: 80px;
-        width: 80px;
-        padding: 15px 0;
-        text-align: center;
-    }
     .nav__container{
         flex-wrap: wrap;
         justify-content: space-evenly;
@@ -63,12 +57,22 @@
         padding-bottom: 10px;
         text-align: center;
     }
+    .umbrella__main{
+        margin: 0 150px
+    }
     .fondo{
         width: 450px;
         height: auto;
     }
+    .fondo--modifierindex{
+        width: 350px;
+    }
+    .fondo__producto{
+        width: 30%;
+        object-position: cover;
+    }
     .title{
-        font-size: 45px;
+        font-size: 40px;
     }
     .copy{
         font-size: 20px;
@@ -108,13 +112,75 @@
         font-size: 18px;
     }
 }
-@media screen and (max-width:700px){
-    .logo__umbrella{
-        height: 100px;
-        width: 100px;
-        padding: 15px 0;
+@media (min-width:768px){
+
+    .logo-header img{
         text-align: center;
     }
+  }
+  
+  @media (max-width:768px){
+    header.main-header{
+      margin-bottom: 4rem;
+    }
+    .header-wrap{
+      position: fixed;
+      width: 100%;
+      background-color: #080809;
+      padding: 0;
+      top: 0;
+      z-index: 9999;
+      height: 100px;
+    }
+    .wrap-logo-header{
+    display: none;
+    }
+    .logo-header, li.menu-item a{
+      color: #222;
+    }
+  
+    i.toggle-menu{
+      display: flex;
+    }
+    ul.main-menu,#nav-main-contact{
+      display: none;
+      left: 0;
+      margin: 0;
+      padding: 0;
+    }
+    ul.main-menu{
+      position: fixed;
+      background-color: #fff;
+    }
+    label.checkbtn{
+      position: fixed;
+      left: 50%;
+      transform: translateX(-50%);
+      top: 3%;
+      z-index: 9999;
+      cursor: pointer;
+    }
+    #check:checked ~ ul{
+      display: flex;
+      z-index: 9;
+      flex-flow: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      top: 0;
+      font-size: 2rem;
+    }
+    .umbrella__main{
+        flex-direction: column-reverse;
+        justify-content: flex-end;
+        height: auto;
+        padding: 98px 0;
+        margin: auto;
+    }
+  }
+  
+
+@media screen and (max-width:700px){
     main .container,
     footer .container{
         padding: 60px 0;
@@ -137,7 +203,8 @@
         flex-direction: column-reverse;
         justify-content: flex-end;
         height: auto;
-        padding: 30px 0;
+        padding: 98px 0;
+        margin: auto;
     }
     .umbrella__texto{
         width: 100%;
@@ -146,6 +213,10 @@
     .fondo{
         width: 60%;
         margin-bottom: 20px;
+    }
+    .fondo__producto{
+        width: 30%;
+        object-position: cover;
     }
     .title{
         font-size: 30px;
@@ -198,14 +269,23 @@
         font-size: 20px;
     }
 }
-@media screen and (max-width:500px){
-    .logo__umbrella{
-        width: 100px;
-        height: 100px;
+@media (max-width:640px){
+    .wrap-two-column{
+      grid-template-columns: 1fr;
     }
+  } 
+  
+@media screen and (max-width:500px){
     .fondo{
         width: 80%;
         margin-bottom: 15px;
+    }
+    .fondo--modifierindex{
+        width: 250px;
+    }
+    .fondo__producto{
+        width: 30%;
+        object-position: cover;
     }
     .services .card{
         width: 95%;

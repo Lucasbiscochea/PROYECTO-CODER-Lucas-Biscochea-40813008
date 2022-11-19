@@ -1,0 +1,46 @@
+/* Página de Contacto */
+
+.hero-page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .wrap-hero-page{
+    color: black;
+    
+  }
+  
+  .section{
+    max-width: 1200px;
+    margin: auto;
+    padding: 1rem;
+  }
+  
+  .wrap-two-column{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 4rem;
+  }
+  
+  
+  /* Formulario */
+  
+  .formulario{
+    display: flex;
+    flex-flow: column;
+  }
+  
+  .formulario input, .formulario textarea{
+    margin: .5rem 0;
+    padding: .5rem .2rem;
+  }
+  
+  .formulario button{
+    width: fit-content;
+    border: none;
+    padding: .5rem 1rem;
+    background: linear-gradient(180deg, #080809 0%, black 100%);
+    color: #fff;
+    font-size: 1.1rem;
+    border-radius: 6px;
+  }

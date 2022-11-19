@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -8,48 +8,46 @@
     <meta name="keywords"
         content="umbrella,resident-evil,residente-del-mal,juego,farmaceutica,saga,gamer,vacuna,virus,cura,inmortalidad,zombie">
     <meta name="description" content="Pagina fandom de umbrella la farmaceutica de la saga resident evil">
-    <link rel="stylesheet" href="../css/main.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="shortcut icon"
         href="https://static.wikia.nocookie.net/residentevil/images/4/4a/Site-favicon.ico/revision/latest?cb=20210731071654&amp;path-prefix=es%22%3E">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;500&display=swap" rel="stylesheet">
-    <!-- CSS only -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-
-    <title>Umbrella Corportartion|Productos</title>
+    <title>Umbrella-Product</title>
+    <link rel="stylesheet" href="/css/main.css">
 </head>
 
 <body>
-    <header class="umbrella">
-        <nav class="nav__umbrella">
-            <div class="container nav__container">
-                <div class="logo">
-                    <img src="/img/Umbrella-Corporation-Logo.png" alt="logo" class="logo__umbrella">
-                </div>
-                <div class="links">
-                    <ul>
-                        <li>
-                            <a href="/index.html" class="link">Inicio</a>
-                            <a href="ciencia.html" class="link">Ciencia</a>
-                            <a href="productos.html" class="link link--active">Productos</a>
-                            <a href="novedades.html" class="link">Novedades</a>
-                            <a href="nosotros.html" class="link">Nosotros</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
 
+    <header class="main-header">
+        <div class="header-wrap">
+            <div class="wrap-logo-header">
+                <a href="/" class="logo-header">
+                    <img src="/img/Umbrella-Corporation-Logo.png" alt="">
+                </a>
+            </div>
+            <div class="wrap-nav-header">
+                <nav class="nav-header">
+                    <input type="checkbox" id="check">
+                    <label for="check" class="checkbtn">
+                        <i class="toggle-menu">
+                            <img src="/img/Umbrella-Corporation-Logo.png" />
+                        </i>
+                    </label>
+                    <ul class="main-menu">
+                        <li class="menu-item"><a href="/index.html">Inicio</a></li>
+                        <li class="menu-item"><a href="./ciencia.html">Ciencia</a></li>
+                        <li class="menu-item"><a href="./productos.html">Productos</a></li>
+                        <li class="menu-item"><a href="./novedades.html">Novedades</a></li>
+                        <li class="menu-item"><a id="nav-main-contact" href="nosotros.html">Nosotros</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
         <section class="container umbrella__main">
             <div class="umbrella__textos">
                 <h1 class="title"><span class="title--active">Productos</span></h1>
                 <p class="copy">Nuestro Negocio Es El <span class="copy__active">Futuro.</span> </p>
-                <!-- <a href="#" class="cta">Quiero Futuro</a> -->
             </div>
-            <img src="/img/adn-productos.png" class="fondo fondo--modifierproductos" alt="fondo">
+            <img src="/img/adn-productos.png" alt="fondo" class="fondo fondo__producto">
         </section>
     </header>
     <main>
@@ -100,12 +98,14 @@
                 <h3 class="title__footer">Descargar App</h3>
                 <div class="dowloand__app">
                     <div class="dowloand__item">
-                        <i class='bx bxl-apple dowloand__logo'></i>
+                        <a href="https://www.apple.com/store" target="_blank"><i
+                                class='bx bxl-apple dowloand__logo'></i></a>
                         <h4 class="dowloand__title">App Store</h4>
                     </div>
 
                     <div class="dowloand__item">
-                        <i class='bx bxl-play-store dowloand__logo'></i>
+                        <a href="https://play.google.com/store/games?hl=es_AR&gl=US&pli=1" target="_blank"><i
+                                class='bx bxl-play-store dowloand__logo'></i></a>
                         <h4 class="dowloand__title">Play Store</h4>
                     </div>
                 </div>
@@ -125,10 +125,14 @@
                 </form>
                 <div class="socialmedia">
                     <p class="socialmedia__legend">Siguenos en:</p>
-                    <i class='socialmedia__icon bx bxl-facebook-circle'></i>
-                    <i class='socialmedia__icon bx bxl-instagram'></i>
-                    <i class='socialmedia__icon bx bxl-github'></i>
-                    <i class='socialmedia__icon bx bxl-linkedin-square'></i>
+                    <a href="https://www.facebook.com/" target="_blank"><i
+                            class='socialmedia__icon bx bxl-facebook-circle'></i></a>
+                    <a href="https://www.instagram.com/" target="_blank"><i
+                            class='socialmedia__icon bx bxl-instagram'></i></a>
+                    <a href="https://github.com/Lucasbiscochea/PROYECTO-CODER-Lucas-Biscochea-40813008"
+                        target="_blank"><i class='socialmedia__icon bx bxl-github'></i></a>
+                    <a href="https://ar.linkedin.com/" target="_blank"><i
+                            class='socialmedia__icon bx bxl-linkedin-square'></i></a>
                 </div>
             </section>
     </footer>
